@@ -20,6 +20,10 @@ body {
     gap: 10px;
     border-bottom: solid black 0.5px;
     align-items: center;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    z-index: 3;
 
 }
 
@@ -39,6 +43,7 @@ body {
 .navbar__s2__input {
     border: none;
     width: 100%;
+    background-color: transparent;
 }
 
 .navbar__s2__input:focus {
@@ -69,11 +74,31 @@ body {
     padding: 10px;
 
 }
+.saleimage{
+    position: relative;
+}
 
 .saleimage img {
     width: 100%;
+    
+    
+    
 
 }
+.saleimage__offer{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: white;
+    width: 350px;
+    height: fit-content;
+    padding: 20px;
+    border: solid #A435F0 1px;
+    border-radius: 30px;
+    
+    
+}
+
 
 .recommended {
     padding: 10px;
@@ -152,4 +177,21 @@ body {
     color: white;
     background-color: black;
     padding: 30px;
+}
+.mylearning{
+    position: relative;
+    cursor: pointer;
+
+}
+.mylearning__popup{
+    border: solid black 1px;
+    background-color: white;
+    position: absolute;
+    top:20px;
+    display: none;
+    padding: 5px;
+}
+.mylearning:hover .mylearning__popup{
+    display:block;
+
 }
